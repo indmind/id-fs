@@ -7,10 +7,10 @@ describe('main test', () => {
   })
 
   it('should have correct function', () => {
-    expect(JSON.stringify(idfs.akses)).toEqual(JSON.stringify(fs.accessSync))
-    expect(JSON.stringify(idfs.bacaFile)).toEqual(JSON.stringify(fs.readFileSync))
-    expect(JSON.stringify(idfs.tulisFile)).toEqual(JSON.stringify(fs.writeFileSync))
-    expect(JSON.stringify(idfs.ubahNama)).toEqual(JSON.stringify(fs.renameSync))
-    expect(JSON.stringify(idfs.statistik)).toEqual(JSON.stringify(fs.stat))
+    expect(idfs.akses).toEqual(fs.accessSync)
+    expect(idfs.bacaFile).toEqual(fs.readFileSync)
+    expect(idfs.tulisFile).toEqual(fs.writeFileSync)
+    expect(idfs.ubahNama).toEqual(fs.renameSync)
+    expect(idfs.statistik).toEqual(fs.statSync)
   })
 })
