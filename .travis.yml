@@ -1,10 +1,15 @@
 language: nodejs
 version: 8
-
 install:
-  - npm install -g codecov
-  - npm ci
-
-script: 
-  - npm run test
-  - codecov
+- npm install -g codecov
+- npm ci
+script:
+- npm run test
+- codecov
+deploy:
+  provider: npm
+  email: mail.dvync@gmail.com
+  api_key:
+    secure: dTd7eXTWqeQIW7SFnhL0TaoI+H8hBoYU5nn3Gu5pDFzD2VwSAYpBd2QNMCP5uwEIfM0oh+W25oQDuG7wctB/4+ZbMUfar7UF4YVmTpo4/pZz66fG38h784wuFu7mQkdn3cChz1NtnYgVrrZD516p/NCoZVglzbJtLuR5IUVBy95aV3hvzadJFnZnmYDUsnljR3KUPrITCTVuN27ubA75y4URwvgCFkUBLhg5wUy+DLOM1sXkL1+Nae7e7yDO5/ToF0Mxx2Jn3h/Hvw3mQTv3Kxaz9OUQDnYuXdDHdyKtw95qDEEMFfRnygoboxtkqLjf85eWghNadhhez6iifpAH02SyUiJYShSrvohnKitG4ANql91T0QVYDi9q96D1gDamlrMBCt+zDHMMnSha9WIXCE7lzSJ4kWFtfhAUIJlcnPbd2zxseTDs9+IRA8A7rwp9rO+oZoSokkJybLeoAwO/sXj8JKiMyO1LjrIVAqn5F/gcpp9htmbypSKjzor/DpoE+h4qQxVELyw1GiigKE9TIdRS2hrGbRRs8kBWskClpHuZr9pT5s7SOwO+tIF1CT4dzLYv264QO+IeX6RTGLRIYIGIUiOZdlGAw8Mp6uw5vY7f05fl/NN9/zGa4sVqRxL5TTYeibbsOcWkiH/r5aVaFyXMio0S3n/b3xERm3j/9vQ=
+  on:
+    repo: indmind/id-fs
