@@ -1,0 +1,10 @@
+language: nodejs
+version: 8
+
+install:
+  - npm install -g codecov
+  - npm ci
+
+script: 
+  - npm run test
+  - codecov

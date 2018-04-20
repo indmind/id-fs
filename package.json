@@ -1,0 +1,24 @@
+{
+  "name": "id-fs",
+  "version": "0.0.1",
+  "description": "pembungkus module fs berbahasa indonesia (sederhana)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "keywords": [
+    "id",
+    "fs",
+    "indonesia",
+    "jawaskrip"
+  ],
+  "author": "indmind",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
