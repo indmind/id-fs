@@ -1,6 +1,7 @@
-language: nodejs
+language: node_js
 version: 8
 install:
+- if [[ `npm -v` != 5.7* ]]; then npm i -g npm@5.7; fi
 - npm install -g codecov
 - npm ci
 script:
